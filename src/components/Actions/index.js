@@ -1,11 +1,11 @@
-import { ScrollView, TouchableOpacity, View } from "react-native";
+import { ScrollView, StyleSheet, Text, TouchableOpacity, View } from "react-native";
 import { AntDesign } from "@expo/vector-icons";
 
-export default function actions() {
+export default function Actions() {
   return (
     <View>
       <ScrollView
-        style={style.container}
+        style={styles.container}
         horizontal={true}
         showsHorizontalScrollIndicator={false}
       >

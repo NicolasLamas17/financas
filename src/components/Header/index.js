@@ -1,5 +1,5 @@
-import { StyleSheet, Touchable, TouchableOpacity, View } from "react-native";
-import { Feather, feather } from "@expo/vector-icons";
+import { StyleSheet, Text, TouchableOpacity, View } from "react-native";
+import { Feather } from "@expo/vector-icons";
 import { StatusBar } from "expo-status-bar";
 
 const alturaDaBarra = StatusBar.currentHeight
@@ -10,7 +10,7 @@ export default function Header() {
   return (
     <View style={styles.container}>
       <View style={styles.conteudo}>
-        <Text style={styles.nome}>Nicuda</Text>
+        <Text style={styles.nome}>Nicuda Lamas</Text>
 
         <TouchableOpacity style={styles.botao}>
           <Feather name="user" size={27} color={"#"} />
@@ -22,7 +22,7 @@ export default function Header() {
 
 const styles = StyleSheet.create({
   container: {
-    backgroundColor: "#8000ff", // Cor de fundo
+    backgroundColor: "#ffff3a", // Cor de fundo
     flexDirection: "row", // Alinhar na mesma linha
     paddingStart: 16, // Gordurinha no inicio
     paddingEnd: 16, // Gordurinha no final
@@ -39,14 +39,14 @@ const styles = StyleSheet.create({
 
   nome: {
     fontSize: 18, //
-    color: "#fff", //
+    color: "#ff", //
     fontWeight: "bold", //
   },
 
   botao: {
     width: 44, //
     height: 44, //
-    backgroundColor: "rgba(25, 14, 144, 0.88)", //
+    backgroundColor: "rgba(135, 133, 152, 0.88)", //
     justifyContent:"center", //
     alignItems: "center", //
     borderRadius: "50%", //
